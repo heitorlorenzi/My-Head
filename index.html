@@ -21,12 +21,24 @@
         <p class="text-secondary mb-0 small">GitFlow &amp; GitHub Pages &bull; Desenvolvido por <strong>Heitor Lorenzi</strong></p>
     </header>
 
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <a href="./readme.html">
-            <img id="img" src="img/cabeca.jpg">
-        </a>
+    <!-- Conteúdo Principal / Card Interativo -->
+    <main class="container my-auto py-5 d-flex justify-content-center align-items-center">
+        <div class="card-spinning text-center">
+            <a href="./readme.html" title="Clique para ver o README">
+                <img id="img" src="img/cabeca.jpg" alt="Cabeça Girando" class="mb-4">
+            </a>
 
-    </div>
+            <h2 class="h5 fw-bold mb-2">Animação Interativa GSAP</h2>
+            <p class="text-secondary small mb-4">Controle a velocidade de rotação da cabeça em tempo real:</p>
+
+            <div class="controls-container d-flex justify-content-center gap-2 flex-wrap">
+                <button id="btn-pause" class="btn btn-outline-warning btn-sm px-3">⏸️ Pausar</button>
+                <button id="btn-slow" class="btn btn-outline-info btn-sm px-3">🐢 0.5x</button>
+                <button id="btn-normal" class="btn btn-outline-light btn-sm px-3">⚡ 1x</button>
+                <button id="btn-fast" class="btn btn-outline-danger btn-sm px-3">🚀 3x</button>
+            </div>
+        </div>
+    </main>
 
 
 
